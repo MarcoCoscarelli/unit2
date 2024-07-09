@@ -418,24 +418,21 @@ footer a {
   background-color: rgba(0, 0, 0, 0.7); 
 }
 
-.underline-image {
+/*UNDERLINING*/
+
+H1 {
   position: relative;
-  display: inline-block;
-  padding-bottom: 5px; /* Spazio per la sottolineatura */
+  z-index: 0;
 }
 
-.underline-image::after {
-  content: "";
+h1 img {
   position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 80%;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 10px; /* Altezza della sottolineatura */
-  background: url('../img/underline.svg') no-repeat;
-  background-size: cover; /* Adatta l'immagine alla larghezza del contenitore */
-  width: 100%;
-  z-index: -1;
-
+  opacity: 0.8;
 }
 
 
