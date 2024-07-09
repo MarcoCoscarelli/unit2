@@ -315,7 +315,7 @@ aside div {
 }
 
 aside div .fa-tag {  /*aggiunta icone fas fa-tag*/
-  font-size: 4rem;
+  font-size: 3rem;
   top: 10px;
   right: 10px;
 
@@ -326,7 +326,7 @@ aside div .fa-tag {  /*aggiunta icone fas fa-tag*/
 @media screen and (min-width: 1200px) {
   aside div {
     display: inline-block;
-    width: 33.333%;
+    width: 33%;
     margin-inline: -2px;
   }
 }
@@ -392,11 +392,63 @@ footer a {
   aside,
   footer,
   .social,
-  .toTop {
+  .totheTop {
     display: none;
   }
 }
 
+/*Social Button*/
+
+.social,
+.totheTop {
+  line-height: 1;
+  position: fixed;
+  right: -15px;
+  z-index: 999;
+}
+
+.social {
+  top: 16px;
+}
+
+.totheTop {
+  bottom: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .social {
+    top: unset;
+    bottom: 96px;
+  }
+}
+
+.totheTop a,
+.social a {
+  color: #f01f2a;
+  font-size: 2rem;
+  display: block;
+}
+
+.social a {
+  color: rgb(45, 101, 185);
+}
+
+.social a:first-child {
+  margin-bottom: 1rem;
+}
+
+.totheTop .far,
+.social .far {
+  background: #ffffff70;
+ 
+  line-height: 0.8;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  padding: 16px;
+  border: 2px solid white;
+}
+
+/*
 .transparent-buttons {
   position: fixed;
   right: 10px; 
@@ -427,7 +479,7 @@ footer a {
 
 .transparent-button:hover {
   background-color: rgba(0, 0, 0, 0.7); 
-}
+} */
 
 /*UNDERLINING*/
 
@@ -448,27 +500,3 @@ h1 img {
 
 
 
-/*.underline-image {
-  position: relative;
-  display: inline-block;
-  background: url('../img/underline.svg') repeat-x;
-  background-size: contain;
-  bottom: -5px;
-  height: 52px; 
-  
-  
-  
-}
-
-
- .underline-image::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 52px; 
-  
-  background-size: contain; 
-}*/
