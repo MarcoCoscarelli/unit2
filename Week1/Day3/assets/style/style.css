@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    background-color:#FEF7E2;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b4513;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+nav button {
+    background-color:#FFDF7F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #8b4513;
+}
+
+.best-selling {
+    margin-top: 20px;
+}
+
+.best-selling h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #FEF7E2;
+    border-radius: 15px;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.product-info button {
+    background-color: #FFDF7F;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.news {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff0c1;
+    border-radius: 15px;
+}
+
+.news h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 24px;
+}
+
+.news article {
+    margin-top: 20px;
+}
+
+.news h3 {
+    font-size: 18px;
+}
+
+.news p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.news img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
