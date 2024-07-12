@@ -1,3 +1,7 @@
+*{
+    font: 'indie flower';
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -16,8 +20,27 @@ section div {
     background-image: linear-gradient(rgb(255,255,204) 0%, rgb(231,231,174) 75%, rgb(189,189,161) 100%);
     background-color: rgb(255, 255, 204);
     padding: 2em;
-    margin: 1em;
+    margin: 1.5em;
     box-shadow: 5px 5px 10px black;
     transform: rotate(-5deg);
 
+}
+/*caratterizzazione post-it dispari*/
+section div:nth-child(odd) {
+    background-image: linear-gradient(rgb(204,255,204) 0%, rgb(184,219,184) 75%, rgb(159,181,159) 100%);
+    transform: rotate(5deg);
+    background-color: rgb(255, 255, 204);
+}
+/* Caratterizzazione post-it ogni 3 elementi*/
+section div:nth-child(3n) {
+    transform: rotate(9deg);
+    background-color: rgb(204, 204, 255);
+    background-image: linear-gradient(rgb(204,204,255) 0%, rgb(176,176,204) 75%, rgb(140,140,156) 100%);
+}
+/* Effetto zoom al passaggio del mouse */
+section div:hover {
+    box-shadow: 10px 10px 8px black;
+    transform: scale(1.15);
+    cursor: pointer;   
+    
 }
