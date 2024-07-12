@@ -1,0 +1,23 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #666666 ;
+    margin: 30px auto;
+    width: 100%;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+section div {
+    background-image: linear-gradient(rgb(255,255,204) 0%, rgb(231,231,174) 75%, rgb(189,189,161) 100%);
+    background-color: rgb(255, 255, 204);
+    padding: 2em;
+    margin: 1em;
+    box-shadow: 5px 5px 10px black;
+    transform: rotate(-5deg);
+
+}
