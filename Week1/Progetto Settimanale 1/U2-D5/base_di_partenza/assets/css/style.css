@@ -1,0 +1,135 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* Imposta il font e il colore di base */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Stile per la navbar */
+.navbar {
+    background-color: #ffc017; /* Colore di sfondo della navbar */
+    border-bottom: 1px solid #191919; /* Bordi inferiori della navbar */
+    padding: 10px 20px; /* Spaziatura interna */
+
+}
+
+/* Contenitore per allineare logo e pulsanti */
+.container {
+    display: flex;
+    justify-content: space-between; /* Spazio tra logo e pulsanti */
+    align-items: center; /* Allineamento verticale */
+}
+
+
+/* Stile per il logo */
+.logo img {
+    height: 20px; /* Altezza del logo */
+    margin-left: 2em;
+}
+
+/* Stile per i pulsanti */
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Spazio tra i pulsanti */
+    margin-right: 3em;
+    
+}
+
+.btn {
+    background-color: #ffc017; /* Colore di sfondo dei pulsanti */
+    color: #ffffff; /* Colore del testo */
+    border: none;
+    border-radius: 20px; /* Angoli arrotondati */
+    padding: 10px 15px; /* Spaziatura interna */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    font-size: 16px; /* Dimensione del testo */
+    color: #191919;
+}
+
+.btn:hover {
+    background-color: #333333;
+    
+}
+
+.btn-black {
+    background-color:#191919; /* Colore di sfondo del pulsante nero */
+    color: #ffffff; /* Colore del testo del pulsante nero */
+}
+
+.btn-black:hover {
+    background-color: #333333; /* Colore al passaggio del mouse per il pulsante nero */
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #ffc017; /* Colore di sfondo della hero section */
+   
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between; /* Spazio tra il testo e l'SVG */
+    align-items: center; /* Allineamento verticale */
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between; /* Spazio tra il blocco di testo e l'SVG */
+    align-items: center; /* Allineamento verticale */
+    gap: 40px; /* Spazio tra il testo e l'SVG */
+    border-bottom: 2px solid grey ;
+}
+
+/* Stile per il blocco di testo */
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+}
+
+.text h1 {
+    font-size: 3em; /* Dimensione del titolo */
+    margin: 0 0 20px 0; /* Margine inferiore */
+}
+
+.text p {
+    font-size: 1.2em; /* Dimensione del paragrafo */
+    margin: 0 0 20px 0; /* Margine inferiore */
+}
+
+
+a{
+ text-decoration: none;   
+}
+
+.btn-start-reading {
+    background-color:#191919; /* Colore di sfondo del pulsante "Start Reading" */
+    color: #ffffff;
+    height: 15px;
+    width: 120px;
+    text-align: center;
+
+    
+   
+}
+
+.btn-start-reading:hover {
+    background-color: #333333;
+}
+
+/* Stile per il contenitore dell'SVG */
+.svg-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente l'SVG */
+}
