@@ -30,4 +30,52 @@ div#testoAlternato {
     position: relative;
     width: 75%;
 }
+p {
+    text-shadow: 1px 1px 1px grey;
+}
+
+@-webkit-keyframes AlternateText {
+    0% { opacity: 0; }
+    5% { opacity: 0; -webkit-transform: translateY(-40px); transform: translateY(-40px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    25% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); }
+    100% { opacity: 0; }
+}
+@keyframes AlternateText {
+    0% { opacity: 0; }
+    5% { opacity: 0; -webkit-transform: translateY(-40px); transform: translateY(-40px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    25% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); }
+    100% { opacity: 0; }
+}
+
+ .parole i {
+    -webkit-animation: AlternateText 7s linear infinite 0s;
+    -ms-animation: AlternateText 7s linear infinite 0s;
+	animation: AlternateText 7s linear infinite 0s;
+    position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #4d868f;
+}
+
+.parole i:nth-child(2) { 
+    -webkit-animation-delay: 2s; 
+	-ms-animation-delay: 2s; 
+	animation-delay: 2s; 
+	color: #4d868f;
+}
+
+.parole i:nth-child(3) { 
+    -webkit-animation-delay: 4s; 
+	-ms-animation-delay: 4s; 
+	animation-delay: 4s; 
+	color: #4d868f;	
+}
+
+.parole{
+	margin-left: 10px; 
+}
 
