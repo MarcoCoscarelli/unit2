@@ -8,3 +8,17 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+
+body {
+    font-family: 'Bree Serif';
+    font-size: 2rem;
+    color: #515151;
+    line-height: 2;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
