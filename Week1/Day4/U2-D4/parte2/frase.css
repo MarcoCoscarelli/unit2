@@ -22,3 +22,12 @@ main {
     height: 100vh;
 
 }
+
+div#testoAlternato {
+    border: 5px solid #515151;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    width: 75%;
+}
+
