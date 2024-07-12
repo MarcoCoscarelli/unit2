@@ -1,135 +1,318 @@
+/* IMPORTAZIONE FONT */
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
-/* Imposta il font e il colore di base */
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*CSS GENERICO */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    font-size: 0.7rem;
+    font-family: "Roboto", Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    color: #191919
 }
-
-/* Stile per la navbar */
-.navbar {
-    background-color: #ffc017; /* Colore di sfondo della navbar */
-    border-bottom: 1px solid #191919; /* Bordi inferiori della navbar */
-    padding: 10px 20px; /* Spaziatura interna */
-
-}
-
-/* Contenitore per allineare logo e pulsanti */
-.container {
-    display: flex;
-    justify-content: space-between; /* Spazio tra logo e pulsanti */
-    align-items: center; /* Allineamento verticale */
-}
-
-
-/* Stile per il logo */
-.logo img {
-    height: 20px; /* Altezza del logo */
-    margin-left: 2em;
-}
-
-/* Stile per i pulsanti */
-.nav-buttons {
-    display: flex;
-    gap: 10px; /* Spazio tra i pulsanti */
-    margin-right: 3em;
-    
-}
-
-.btn {
-    background-color: #ffc017; /* Colore di sfondo dei pulsanti */
-    color: #ffffff; /* Colore del testo */
-    border: none;
-    border-radius: 20px; /* Angoli arrotondati */
-    padding: 10px 15px; /* Spaziatura interna */
-    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-    font-size: 16px; /* Dimensione del testo */
-    color: #191919;
-}
-
-.btn:hover {
-    background-color: #333333;
-    
-}
-
-.btn-black {
-    background-color:#191919; /* Colore di sfondo del pulsante nero */
-    color: #ffffff; /* Colore del testo del pulsante nero */
-}
-
-.btn-black:hover {
-    background-color: #333333; /* Colore al passaggio del mouse per il pulsante nero */
-}
-
-
-/* Hero Section */
-.hero {
-    background-color: #ffc017; /* Colore di sfondo della hero section */
-   
-}
-
-.hero .container {
-    display: flex;
-    justify-content: space-between; /* Spazio tra il testo e l'SVG */
-    align-items: center; /* Allineamento verticale */
-}
-
-.hero-content {
-    display: flex;
-    justify-content: space-between; /* Spazio tra il blocco di testo e l'SVG */
-    align-items: center; /* Allineamento verticale */
-    gap: 40px; /* Spazio tra il testo e l'SVG */
-    border-bottom: 2px solid grey ;
-}
-
-/* Stile per il blocco di testo */
-.text {
+/*NAV BAR FISSA ALLO SCROLL*/
+header{
+    position: sticky;
+    top: 0;
+    right: 0;
     width: 100%;
+    z-index: 99;
+}
+
+body section{
+    border-bottom: 1px solid #E3E5E7;
+}
+
+.header-container .buttons li.extra{
+    display: none;
+}
+/*HERO SECTION*/
+header,
+.hero-section{
+    background-color: #ffc017;
+    border-bottom: 1px solid #191919;
+    overflow: hidden;
+}
+
+.hero-section{
+    padding: 3em 0;
+}
+
+/* Stilizzazione btn*/
+
+.buttons{
+    flex-grow: 1;
+    list-style-type: none;
+    justify-content: end;
+    gap: 1.5em;
+}
+
+.sign-in a,
+.btn{
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #191919;
+    color: white;
+    padding: 10px 1em;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+/*Distanziamento e caratterizzazione testo hero-section e Prima parte articoli*/
+.article-container,
+.hero-section article{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+
+    padding: 4em 0;
+}
+
+.hero-section article h1{
+    font-family: "Spectral";
+    font-size: 3.5em;
+}
+
+.hero-section article h2{
+    font-size: 1.2em;
+}
+
+.section-title{
+    align-items: center;
+    gap: 0.8em;
+}
+
+.section-title>*{
+    display: inline-block;
+}
+
+/*APPLICO PROPRIETà FLEX A TUTTE LE CLASSI SU CUI MI SERVE*/
+.header-container,
+.buttons,
+.section-title,
+.article,
+.author,
+.trending-on-medium article .article-details,
+.tag-container ul,
+.articles-container nav ul,
+.article-details,
+.articles-container article,
+.articles-container article .image-content{
+    display: flex;
+    
+}
+
+/*DOPO VARI TENTATIVI FALLITI PROVO A CENTRARE LA PARTE CENTRALE CON LA WIDTH IN PERCENTUALE */
+.header-container,
+.article-container,
+.trending-container,
+.aside-container,
+.articles-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+
+.section-title h2{
+    font-size: 0.6em;
+}
+
+.articles-container,
+.trending-on-medium article{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin-bottom: 2em;
-    margin-left: 3em;
 }
 
-.text h1 {
-    font-size: 3em; /* Dimensione del titolo */
-    margin: 0 0 20px 0; /* Margine inferiore */
+.article-container{
+    padding: 0;
 }
 
-.text p {
-    font-size: 1.2em; /* Dimensione del paragrafo */
-    margin: 0 0 20px 0; /* Margine inferiore */
+.article,
+.article-details,
+.articles-container article{
+    gap: 1em;
 }
 
-
-a{
- text-decoration: none;   
+.trending-on-medium article .article-details{
+    justify-content: space-between;
 }
 
-.btn-start-reading {
-    background-color:#191919; /* Colore di sfondo del pulsante "Start Reading" */
-    color: #ffffff;
-    height: 15px;
-    width: 120px;
-    text-align: center;
-
+.article-number h4{
+    color: #E3E5E7;
+    font-size: 3em;
+    font-weight: 800;
     
+
+}
+
+.author img{
+    border-radius: 50%;
+    width: 1.5em;
+}
+
+.author{
+    gap: 0.5em;
+    align-items: center;
+}
+
+.author h4{
+    font-size: 0.8em;
+    
+}
+
+.thin{
+    font-weight: 400;
+}
+
+.article-container .article-details p,
+.tag-container li,
+.articles-container nav ul li a{
+    color: #888888;
+}
+
+
+
+/* STILE SEZIONE DISCOVER USANDO LISTA NON ORDINATA NELL'ASIDE APPLICANDO BORDI AD OGNI OGGETTO DELLA LISTA*/
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.tag-container li{
+    padding: 1em;
+    border: 1px solid #747474;
+    width: fit-content;
+}
+
+.tag-container ul,
+.articles-container nav ul{
+    flex-wrap: wrap; 
+    gap: 1em;
+}
+
+/* ALLINEO GLI ARTICOLI A SINISTRA DELL'ASIDE CON LE PRIORITà FLEX*/
+
+.articles-container article .article-content h4 ~ *,
+.articles-container article .article-content .article-details *{
+    color: #747474;
+}
+
+/* ALLINEO GLI ARTICOLI A SINISTRA DELL'ASIDE CON LE PRIORITà FLEX E CON DISPLAY BLOCK ALL'IMMAGINE LA ALLINEO ALLA PARTE TESTUALE DEL BLOCCO*/
+
+.articles-container article .article-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.articles-container article .image-content img {
+    display: block;
+    max-width: 100%;
+}
+
+.articles-container article .image-content{
+    align-items: center;
+    flex: 1;
+}
+
+
+.article-details .save{
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.tag{
+    background-color: #E3E5E7;
+    border-radius: 20px;
+    padding: 1px 5px;
+}
+
+.article-details{
+    align-items: center;
+}
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (min-width: 599px) {
+    *{
+        font-size: 1em;
+    }
+
+    .header-container .buttons li.extra{
+        display: block;
+    }
+
+    .header-container .buttons a{
+        font-size: 0.6em;
+    }
+
+    .hero-section .article-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-section .article-container article{
+        flex: 2;
+    }
+
+    .hero-section .article-container svg{
+        display: block;
+        position: absolute;
+        width: 180%;
+    }
+
+    .hero-section .article-container .svg-container{
+        position: relative;
+        flex: 1;
+        
+    }
+
+    .trending-on-medium .article-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .trending-on-medium .article-container .article{
+        width: 50%;
+    }
+
    
 }
 
-.btn-start-reading:hover {
-    background-color: #333333;
-}
+@media screen and (min-width:799px) {
+    .trending-on-medium .article-container .article{
+        width: 35%;
+    }
 
-/* Stile per il contenitore dell'SVG */
-.svg-container {
-    display: flex;
-    align-items: center; /* Allinea verticalmente l'SVG */
+    .aside-and-articles{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+        gap: 1.5em;
+       
+    }
+
+    .aside-and-articles .aside-container{
+        flex: 1;
+    }
+
+    .aside-and-articles .articles-container{
+        flex: 2;
+    }
 }
