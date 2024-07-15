@@ -131,6 +131,10 @@ header,
 
 .article-container{
     padding: 0;
+    margin: 0 auto;
+    
+    
+    
 }
 
 .article,
@@ -146,7 +150,9 @@ header,
 .article-number h4{
     color: #E3E5E7;
     font-size: 3em;
+    
     font-weight: 800;
+    
     
 
 }
@@ -162,7 +168,7 @@ header,
 }
 
 .author h4{
-    font-size: 0.8em;
+    font-size: 0.7em;
     
 }
 
