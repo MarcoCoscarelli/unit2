@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflop</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
+
+<body class="vh-100 d-flex flex-column bg-black text-light">
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-black text-light" data-bs-theme="dark">
+            <div class="container-fluid">
+                <img src="./assets/imgs/netflix_logo.png" class="navbar-brand img-fluid" width="100px"
+                    alt="netflix logo" style="z-index: 999;">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold text-light" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My List</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar navbar-expand-lg bg-black text-light">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <i class="text-light bi bi-search nav-link "></i>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-light">KIDS</span>
+                            </li>
+                            <li class="nav-item">
+                                <i class="text-light bi bi-bell-fill nav-link"></i>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class=" px-1 py-3 rounded text-light">
+                                        <img src="./assets/imgs/usernetflix.png" alt="user"
+                                            class="img-fluid rounded-circle" width="35px">
+                                    </span>
+                                </a>
+                                <ul class="bg-black-subtle dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./profile.html" data-bs-toggle="modal"
+                                            data-bs-target="#profileModal">
+                                            <i class="text-secondary bi bi-person-fill"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="flex-grow-1">
+
+
+        <section class="container-fluid px-4 my-3">
+
+            <section class="row">
+                <div class="col-4 col-sm-3 col-lg-2">
+                    <h2>TV Shows</h2>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle border border-1 border-light" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </button>
+                        <ul class="dropdown-menu bg-black-subtle">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Thriller</a></li>
+                            <li><a class="dropdown-item" href="#">Comedy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="btn-group btn-group-sm float-end" role="group" aria-label="Small button group">
+                        <button type="button" class="btn btn-outline-light">
+                            <i class="bi bi-list mx-1"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light">
+                            <i class="bi bi-grid mx-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="container-fluid px-4 my-5">
+
+            <section class="row">
+                <h4>Trending Now</h3>
+            </section>
+
+            <section class="row">
+
+                <div id="TrendingNow" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media0.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media1.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media2.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media3.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media4.jpg" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media5.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media6.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media7.webp" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#TrendingNow"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#TrendingNow"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </section>
+
+        </section>
+
+
+        <section class="container-fluid px-4 my-4">
+
+            <section class="row">
+                <h4>Watch It Again</h3>
+            </section>
+
+            <section class="row">
+
+                <div id="WatchItAgain" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media8.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media9.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media10.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media11.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media12.jpg" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media13.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media14.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media15.jpg" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#WatchItAgain"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#WatchItAgain"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </section>
+
+        </section>
+
+
+        <section class="container-fluid px-4 my-5">
+
+            <section class="row">
+                <h4>New Releases</h3>
+            </section>
+
+            <section class="row">
+
+                <div id="NewReleases" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media16.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media17.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media18.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media19.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media20.jpg" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media21.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media22.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media23.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media24.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media25.webp" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-5 align-items-sm-center g-3">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media26.webp" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media27.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media28.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media29.jpg" class="img-fluid" alt=".">
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <img src="./assets/imgs/serie-tv/media30.jpg" class="img-fluid" alt=".">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#NewReleases"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#NewReleases"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+          </section>
+        </section>
+    </main>
+ <footer class="text-secondary bg-black">
+        <section class="container px-4 my-3">
+            <div class="row row-cols-1 g-3">
+                <div class="col">
+                    <div class="d-flex flex-row gap-1 fs-4 justify-content-center justify-content-sm-start">
+                        <i class="text-secondary bi bi-facebook"></i>
+                        <i class="text-secondary bi bi-instagram"></i>
+                        <i class="text-secondary bi bi-twitter-x"></i>
+                        <i class="text-secondary bi bi-youtube"></i>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-4 g-0">
+                        <div class="col text-center text-sm-start">
+                            <p class="my-2">Audio and Subtitles</p>
+                            <p class="my-2">Media Center</p>
+                            <p class="my-2">Privacy</p>
+                            <p class="my-2">Contact Us</p>
+                        </div>
+                        <div class="col text-center text-sm-start">
+                            <p class="my-2">Audio Description</p>
+                            <p class="my-2">Investor Realtions</p>
+                            <p class="my-2">Legal Notices</p>
+                        </div>
+                        <div class="col text-center text-sm-start">
+                            <p class="my-2">Help Center</p>
+                            <p class="my-2">Jobs</p>
+                            <p class="my-2">Cookie Preferences</p>
+                        </div>
+                        <div class="col text-center text-sm-start">
+                            <p class="my-2">Gift Cards</p>
+                            <p class="my-2">Term of Use</p>
+                            <p class="my-2">Corporate info</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col">
+                    <small class="fst-italic">&copy; 1997-2019 Netflix, inc. {i-0d00fcda2fdf9c0de}</small>
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+    </footer>
+
+
+    <div class="modal fade bg-black" id="profileModal" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="profileModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-black border-0">
+                <div class="modal-header px-0">
+                    <h1 class="modal-title fs-1" id="profileModalLabel">Edit Profile</h1>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./assets/imgs/avatar.png" class="img-fluid" alt="Avatar">
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="bg-secondary p-2 align-self-stretch">
+                                        Strive Student
+                                    </p>
+                                    <label for="lenguages">Languages:</label>
+                                    <select class="form-select form-select-sm bg-black border-light mb-3 text-light"
+                                        style="width: fit-content;">
+                                        <option selected>English</option>
+                                        <option value="1">Italian</option>
+                                        <option value="2">Indian</option>
+                                        <option value="3">Japanese</option>
+                                    </select>
+
+                                    <hr class="border-bottom-1 border-dark-subtle opacity-50 my-2 w-100">
+
+                                    <h5>Maturity Settings:</h5>
+                                    <button type="button" class="btn btn-secondary text-start">ALL MATURITY
+                                        RATINGS</button>
+                                    <p>Show titles of all maturity ratings for this profile.</p>
+                                    <button type="button" class="btn btn-outline-secondary"
+                                        data-bs-dismiss="modal">EDIT</button>
+
+                                    <hr class="border-bottom-1 border-dark-subtle opacity-50 my-4 w-100">
+
+                                    <h5>Autoplay controls</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input bg-black border border-dark" type="checkbox"
+                                            value="" id="firstCheck">
+                                        <label class="form-check-label" for="firstCheck">
+                                            Autoplay next episode in a series on all devices.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input bg-black border border-dark" type="checkbox"
+                                            value="" id="secondCheck">
+                                        <label class="form-check-label" for="secondCheck">
+                                            Autoplay previes while browsing on all devices.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex flex-row justify-content-around w-80 gap-1">
+                        <button type="button" class="w-80 btn btn-light">SAVE</button>
+                        <button type="button" class="w-80 btn btn-outline-light"
+                            data-bs-dismiss="modal">CANCEL</button>
+                        <button type="button" class="w-80 btn btn-outline-light">DELETE PROFILE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
